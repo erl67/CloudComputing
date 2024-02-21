@@ -20,6 +20,23 @@ jps
 
 or just the /bootstrap.sh
 
+testing prior to hadoop:
+$ cat test | ./mapper.py 
+| sort -t 1 | ./reducer.py
+be      2
+jack    2
+nimble  1
+quick   1
+
+
+ 
+cat test | ./mapper3.py | sort -t 1 | ./reducer3.py
+
+#4 to sort reverse
+echo output4.txt | sort -k2,2nr > output4sorted.txt
+root@fa8638416a92:/opt/code/output# cat out4.txt | sort -k2,2nr | head -n 10 > out4sorted.txt
+
+
 Sources:
 https://docs.docker.com/engine/reference/builder/
 https://stackoverflow.com/questions/17569423/what-is-best-way-to-start-and-stop-hadoop-ecosystem-with-command-line

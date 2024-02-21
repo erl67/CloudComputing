@@ -1,0 +1,1034 @@
+2024-02-21 20:03:24,869 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-02-21 20:03:24,972 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-02-21 20:03:24,972 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2024-02-21 20:03:24,992 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2024-02-21 20:03:25,327 INFO mapred.FileInputFormat: Total input files to process : 1
+2024-02-21 20:03:25,367 INFO net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:9866
+2024-02-21 20:03:25,383 INFO mapreduce.JobSubmitter: number of splits:13
+2024-02-21 20:03:25,530 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1070047074_0001
+2024-02-21 20:03:25,530 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-02-21 20:03:25,747 INFO mapred.LocalDistributedCacheManager: Localized file:/opt/code/mapper2.py as file:/tmp/hadoop-root/mapred/local/job_local1070047074_0001_3244770e-5aa6-4d95-904e-f06f7524fda7/mapper2.py
+2024-02-21 20:03:25,767 INFO mapred.LocalDistributedCacheManager: Localized file:/opt/code/reducer2.py as file:/tmp/hadoop-root/mapred/local/job_local1070047074_0001_b2a3b322-3892-4665-8e43-70fb3ddd75f2/reducer2.py
+2024-02-21 20:03:25,871 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2024-02-21 20:03:25,875 INFO mapreduce.Job: Running job: job_local1070047074_0001
+2024-02-21 20:03:25,876 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2024-02-21 20:03:25,879 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2024-02-21 20:03:25,889 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:25,889 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:25,958 INFO mapred.LocalJobRunner: Waiting for map tasks
+2024-02-21 20:03:25,963 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000000_0
+2024-02-21 20:03:26,002 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:26,002 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:26,024 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:26,034 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:1610612736+143767396
+2024-02-21 20:03:26,075 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:26,149 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:26,172 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:26,172 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:26,172 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:26,172 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:26,172 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:26,179 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:26,183 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:26,193 INFO Configuration.deprecation: mapred.work.output.dir is deprecated. Instead, use mapreduce.task.output.dir
+2024-02-21 20:03:26,193 INFO Configuration.deprecation: map.input.start is deprecated. Instead, use mapreduce.map.input.start
+2024-02-21 20:03:26,194 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2024-02-21 20:03:26,195 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2024-02-21 20:03:26,196 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2024-02-21 20:03:26,196 INFO Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2024-02-21 20:03:26,196 INFO Configuration.deprecation: map.input.file is deprecated. Instead, use mapreduce.map.input.file
+2024-02-21 20:03:26,197 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2024-02-21 20:03:26,197 INFO Configuration.deprecation: map.input.length is deprecated. Instead, use mapreduce.map.input.length
+2024-02-21 20:03:26,198 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2024-02-21 20:03:26,198 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2024-02-21 20:03:26,199 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2024-02-21 20:03:26,223 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,225 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,234 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,259 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,260 INFO streaming.PipeMapRed: Records R/W=1076/1
+2024-02-21 20:03:26,337 INFO streaming.PipeMapRed: R/W/S=10000/9375/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,682 INFO streaming.PipeMapRed: R/W/S=100000/50395/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:26,882 INFO mapreduce.Job: Job job_local1070047074_0001 running in uber mode : false
+2024-02-21 20:03:26,884 INFO mapreduce.Job:  map 0% reduce 0%
+2024-02-21 20:03:26,899 INFO streaming.PipeMapRed: R/W/S=200000/50395/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:27,176 INFO streaming.PipeMapRed: R/W/S=300000/50395/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:27,353 INFO streaming.PipeMapRed: R/W/S=400000/50395/0 in:400000=400000/1 [rec/s] out:50395=50395/1 [rec/s]
+2024-02-21 20:03:27,477 INFO streaming.PipeMapRed: R/W/S=500000/50395/0 in:500000=500000/1 [rec/s] out:50395=50395/1 [rec/s]
+2024-02-21 20:03:27,627 INFO streaming.PipeMapRed: R/W/S=600000/50395/0 in:600000=600000/1 [rec/s] out:50395=50395/1 [rec/s]
+2024-02-21 20:03:27,839 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:27,840 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:27,844 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:27,844 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:27,844 INFO mapred.MapTask: Spilling map output
+2024-02-21 20:03:27,844 INFO mapred.MapTask: bufstart = 0; bufend = 710584; bufvoid = 104857600
+2024-02-21 20:03:27,844 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26011376(104045504); length = 203021/6553600
+2024-02-21 20:03:27,939 INFO mapred.MapTask: Finished spill 0
+2024-02-21 20:03:27,964 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000000_0 is done. And is in the process of committing
+2024-02-21 20:03:27,969 INFO mapred.LocalJobRunner: Records R/W=1076/1
+2024-02-21 20:03:27,969 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000000_0' done.
+2024-02-21 20:03:27,983 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000000_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=178548
+		FILE: Number of bytes written=1519627
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=143767396
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=5
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=690529
+		Map output records=50756
+		Map output bytes=710584
+		Map output materialized bytes=812102
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=50756
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=88
+		Total committed heap usage (bytes)=518520832
+	File Input Format Counters 
+		Bytes Read=143767396
+2024-02-21 20:03:27,983 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000000_0
+2024-02-21 20:03:27,984 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000001_0
+2024-02-21 20:03:27,986 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:27,986 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:27,987 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:27,988 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:0+134217728
+2024-02-21 20:03:27,993 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:28,009 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:28,009 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:28,009 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:28,009 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:28,009 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:28,010 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:28,010 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:28,028 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,029 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,030 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,062 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,095 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,268 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,545 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,699 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,864 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:28,888 INFO mapreduce.Job:  map 100% reduce 0%
+2024-02-21 20:03:29,038 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:500000=500000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:29,218 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:29,369 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:29,370 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:29,371 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:29,371 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:29,380 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000001_0 is done. And is in the process of committing
+2024-02-21 20:03:29,384 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:0+134217728
+2024-02-21 20:03:29,384 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000001_0' done.
+2024-02-21 20:03:29,385 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000001_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=179875
+		FILE: Number of bytes written=1519665
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=277989220
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=7
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=683197
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=109
+		Total committed heap usage (bytes)=671088640
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:29,385 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000001_0
+2024-02-21 20:03:29,385 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000002_0
+2024-02-21 20:03:29,387 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:29,387 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:29,387 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:29,393 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:134217728+134217728
+2024-02-21 20:03:29,404 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:29,405 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:29,414 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:29,414 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:29,414 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:29,414 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:29,414 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:29,415 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:29,417 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:29,441 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,441 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,444 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,470 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,495 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,614 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,729 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,851 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:29,968 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,101 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,230 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,357 INFO streaming.PipeMapRed: R/W/S=700000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,479 INFO streaming.PipeMapRed: R/W/S=800000/0/0 in:800000=800000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:30,649 INFO streaming.PipeMapRed: R/W/S=900000/0/0 in:900000=900000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:30,767 INFO streaming.PipeMapRed: R/W/S=1000000/0/0 in:1000000=1000000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:30,841 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:30,842 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:30,843 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:30,843 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:30,848 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000002_0 is done. And is in the process of committing
+2024-02-21 20:03:30,854 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:134217728+134217728
+2024-02-21 20:03:30,854 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000002_0' done.
+2024-02-21 20:03:30,858 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000002_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=181202
+		FILE: Number of bytes written=1519703
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=412211044
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=9
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=1061945
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=54
+		Total committed heap usage (bytes)=754450432
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:30,859 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000002_0
+2024-02-21 20:03:30,859 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000003_0
+2024-02-21 20:03:30,861 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:30,861 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:30,862 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:30,864 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:268435456+134217728
+2024-02-21 20:03:30,870 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:30,872 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:30,882 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:30,882 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:30,882 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:30,882 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:30,882 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:30,883 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:30,883 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:30,900 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,900 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,900 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,902 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:30,939 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,083 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,244 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,402 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,567 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,728 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:31,907 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:32,042 INFO streaming.PipeMapRed: R/W/S=700000/0/0 in:700000=700000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:32,186 INFO streaming.PipeMapRed: R/W/S=800000/0/0 in:800000=800000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:32,341 INFO streaming.PipeMapRed: R/W/S=900000/0/0 in:900000=900000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:32,590 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:32,591 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:32,592 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:32,592 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:32,608 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000003_0 is done. And is in the process of committing
+2024-02-21 20:03:32,613 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:268435456+134217728
+2024-02-21 20:03:32,613 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000003_0' done.
+2024-02-21 20:03:32,615 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000003_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=182529
+		FILE: Number of bytes written=1519741
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=546432868
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=11
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=965703
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=754450432
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:32,615 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000003_0
+2024-02-21 20:03:32,616 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000004_0
+2024-02-21 20:03:32,618 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:32,618 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:32,620 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:32,622 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:402653184+134217728
+2024-02-21 20:03:32,628 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:32,630 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:32,643 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:32,644 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:32,644 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:32,644 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:32,644 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:32,649 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:32,651 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:32,669 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:32,669 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:32,669 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:32,689 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:32,707 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:32,921 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:33,248 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:33,405 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:33,561 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:33,721 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:500000=500000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:33,881 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:34,036 INFO streaming.PipeMapRed: Records R/W=695890/1
+2024-02-21 20:03:34,041 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:34,043 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:34,044 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:34,044 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:34,045 INFO mapred.MapTask: Spilling map output
+2024-02-21 20:03:34,045 INFO mapred.MapTask: bufstart = 0; bufend = 1414; bufvoid = 104857600
+2024-02-21 20:03:34,045 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26213996(104855984); length = 401/6553600
+2024-02-21 20:03:34,048 INFO mapred.MapTask: Finished spill 0
+2024-02-21 20:03:34,051 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000004_0 is done. And is in the process of committing
+2024-02-21 20:03:34,056 INFO mapred.LocalJobRunner: Records R/W=695890/1
+2024-02-21 20:03:34,057 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000004_0' done.
+2024-02-21 20:03:34,059 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000004_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=183856
+		FILE: Number of bytes written=1521395
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=680654692
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=13
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=695890
+		Map output records=101
+		Map output bytes=1414
+		Map output materialized bytes=1622
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=101
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=3
+		Total committed heap usage (bytes)=822607872
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:34,059 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000004_0
+2024-02-21 20:03:34,060 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000005_0
+2024-02-21 20:03:34,061 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:34,062 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:34,064 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:34,067 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:536870912+134217728
+2024-02-21 20:03:34,076 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:34,077 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:34,093 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:34,093 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:34,093 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:34,093 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:34,093 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:34,094 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:34,094 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:34,110 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,110 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,111 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,135 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,153 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,308 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,466 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,629 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:34,842 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,001 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,168 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:35,331 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:35,332 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:35,335 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:35,335 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:35,341 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000005_0 is done. And is in the process of committing
+2024-02-21 20:03:35,345 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:536870912+134217728
+2024-02-21 20:03:35,346 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000005_0' done.
+2024-02-21 20:03:35,349 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000005_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=185183
+		FILE: Number of bytes written=1521433
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=814876516
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=15
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=696171
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=50
+		Total committed heap usage (bytes)=892862464
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:35,349 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000005_0
+2024-02-21 20:03:35,350 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000006_0
+2024-02-21 20:03:35,353 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:35,353 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:35,354 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:35,356 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:671088640+134217728
+2024-02-21 20:03:35,366 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:35,369 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:35,377 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:35,377 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:35,378 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:35,378 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:35,378 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:35,381 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:35,382 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:35,392 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,392 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,392 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,416 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,434 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,575 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,734 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:35,893 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,054 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,215 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,385 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,541 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:36,542 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:36,543 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:36,543 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:36,547 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000006_0 is done. And is in the process of committing
+2024-02-21 20:03:36,553 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:671088640+134217728
+2024-02-21 20:03:36,553 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000006_0' done.
+2024-02-21 20:03:36,554 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000006_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=185998
+		FILE: Number of bytes written=1521471
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=949098340
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=17
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=697559
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=892862464
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:36,554 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000006_0
+2024-02-21 20:03:36,554 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000007_0
+2024-02-21 20:03:36,556 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:36,557 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:36,557 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:36,559 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:805306368+134217728
+2024-02-21 20:03:36,564 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:36,570 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:36,580 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:36,580 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:36,580 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:36,580 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:36,580 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:36,581 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:36,581 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:36,593 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,593 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,593 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,616 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,634 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,830 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:36,984 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,142 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,302 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,478 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,638 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:37,796 INFO streaming.PipeMapRed: R/W/S=700000/0/0 in:700000=700000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:37,804 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:37,805 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:37,807 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:37,807 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:37,813 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000007_0 is done. And is in the process of committing
+2024-02-21 20:03:37,817 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:805306368+134217728
+2024-02-21 20:03:37,817 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000007_0' done.
+2024-02-21 20:03:37,818 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000007_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=186813
+		FILE: Number of bytes written=1521509
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1083320164
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=19
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=700606
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=52
+		Total committed heap usage (bytes)=1050148864
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:37,818 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000007_0
+2024-02-21 20:03:37,818 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000008_0
+2024-02-21 20:03:37,822 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:37,822 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:37,823 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:37,826 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:939524096+134217728
+2024-02-21 20:03:37,836 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:37,838 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:37,846 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:37,846 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:37,846 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:37,846 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:37,846 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:37,847 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:37,847 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:37,856 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,857 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,857 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,881 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:37,898 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,044 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,207 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,368 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,539 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,697 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:38,862 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:39,023 INFO streaming.PipeMapRed: R/W/S=700000/0/0 in:700000=700000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:39,034 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:39,035 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:39,035 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:39,035 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:39,041 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000008_0 is done. And is in the process of committing
+2024-02-21 20:03:39,045 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:939524096+134217728
+2024-02-21 20:03:39,045 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000008_0' done.
+2024-02-21 20:03:39,046 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000008_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=187628
+		FILE: Number of bytes written=1521547
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1217541988
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=21
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=702934
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1050148864
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:39,046 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000008_0
+2024-02-21 20:03:39,046 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000009_0
+2024-02-21 20:03:39,048 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:39,048 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:39,048 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:39,050 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:1073741824+134217728
+2024-02-21 20:03:39,057 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:39,059 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:39,074 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:39,074 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:39,074 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:39,074 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:39,074 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:39,075 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:39,075 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:39,087 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,087 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,087 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,112 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,130 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,273 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,439 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,615 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,775 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:39,941 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,110 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:600000=600000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:40,324 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:40,325 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:40,325 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:40,325 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:40,330 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000009_0 is done. And is in the process of committing
+2024-02-21 20:03:40,335 INFO mapred.LocalJobRunner: hdfs://localhost:9000/user/root/input/access_log:1073741824+134217728
+2024-02-21 20:03:40,336 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000009_0' done.
+2024-02-21 20:03:40,336 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000009_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=188443
+		FILE: Number of bytes written=1521585
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1351763812
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=23
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=697390
+		Map output records=0
+		Map output bytes=0
+		Map output materialized bytes=6
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=54
+		Total committed heap usage (bytes)=1109917696
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:40,336 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000009_0
+2024-02-21 20:03:40,336 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000010_0
+2024-02-21 20:03:40,338 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:40,338 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:40,339 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:40,340 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:1207959552+134217728
+2024-02-21 20:03:40,349 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:40,355 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:40,362 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:40,363 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:40,363 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:40,363 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:40,363 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:40,365 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:40,365 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:40,383 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,383 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,383 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,401 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,418 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,577 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,740 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:40,762 INFO streaming.PipeMapRed: Records R/W=210778/1
+2024-02-21 20:03:40,958 INFO streaming.PipeMapRed: R/W/S=300000/89657/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:41,175 INFO streaming.PipeMapRed: R/W/S=400000/189277/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:41,392 INFO streaming.PipeMapRed: R/W/S=500000/289483/0 in:500000=500000/1 [rec/s] out:289483=289483/1 [rec/s]
+2024-02-21 20:03:41,626 INFO streaming.PipeMapRed: R/W/S=600000/389337/0 in:600000=600000/1 [rec/s] out:389348=389348/1 [rec/s]
+2024-02-21 20:03:41,842 INFO streaming.PipeMapRed: R/W/S=700000/489373/0 in:700000=700000/1 [rec/s] out:489381=489381/1 [rec/s]
+2024-02-21 20:03:41,867 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:41,869 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:41,869 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:41,869 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:41,869 INFO mapred.MapTask: Spilling map output
+2024-02-21 20:03:41,869 INFO mapred.MapTask: bufstart = 0; bufend = 6948256; bufvoid = 104857600
+2024-02-21 20:03:41,869 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 24229184(96916736); length = 1985213/6553600
+2024-02-21 20:03:41,896 INFO mapreduce.Job:  map 77% reduce 0%
+2024-02-21 20:03:42,124 INFO mapred.MapTask: Finished spill 0
+2024-02-21 20:03:42,127 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000010_0 is done. And is in the process of committing
+2024-02-21 20:03:42,131 INFO mapred.LocalJobRunner: Records R/W=210778/1
+2024-02-21 20:03:42,132 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000010_0' done.
+2024-02-21 20:03:42,132 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000010_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=189258
+		FILE: Number of bytes written=9462487
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1485985636
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=25
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=705931
+		Map output records=496304
+		Map output bytes=6948256
+		Map output materialized bytes=7940870
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=496304
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1109917696
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:42,133 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000010_0
+2024-02-21 20:03:42,133 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000011_0
+2024-02-21 20:03:42,139 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:42,139 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:42,140 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:42,142 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:1342177280+134217728
+2024-02-21 20:03:42,152 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:42,154 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:42,164 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:42,164 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:42,164 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:42,164 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:42,164 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:42,165 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:42,165 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:42,175 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,175 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,176 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,200 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,202 INFO streaming.PipeMapRed: Records R/W=1183/1
+2024-02-21 20:03:42,225 INFO streaming.PipeMapRed: R/W/S=10000/9055/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,431 INFO streaming.PipeMapRed: R/W/S=100000/99033/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,661 INFO streaming.PipeMapRed: R/W/S=200000/199170/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,879 INFO streaming.PipeMapRed: R/W/S=300000/298930/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:42,897 INFO mapreduce.Job:  map 100% reduce 0%
+2024-02-21 20:03:43,098 INFO streaming.PipeMapRed: R/W/S=400000/399065/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:43,320 INFO streaming.PipeMapRed: R/W/S=500000/499271/0 in:500000=500000/1 [rec/s] out:499271=499271/1 [rec/s]
+2024-02-21 20:03:43,541 INFO streaming.PipeMapRed: R/W/S=600000/599477/0 in:600000=600000/1 [rec/s] out:599477=599477/1 [rec/s]
+2024-02-21 20:03:43,773 INFO streaming.PipeMapRed: R/W/S=700000/699097/0 in:700000=700000/1 [rec/s] out:699097=699097/1 [rec/s]
+2024-02-21 20:03:43,796 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:43,796 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:43,797 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:43,797 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:43,797 INFO mapred.MapTask: Spilling map output
+2024-02-21 20:03:43,797 INFO mapred.MapTask: bufstart = 0; bufend = 9902270; bufvoid = 104857600
+2024-02-21 20:03:43,797 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 23385180(93540720); length = 2829217/6553600
+2024-02-21 20:03:43,897 INFO mapreduce.Job:  map 85% reduce 0%
+2024-02-21 20:03:44,133 INFO mapred.MapTask: Finished spill 0
+2024-02-21 20:03:44,137 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000011_0 is done. And is in the process of committing
+2024-02-21 20:03:44,143 INFO mapred.LocalJobRunner: Records R/W=1183/1
+2024-02-21 20:03:44,143 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000011_0' done.
+2024-02-21 20:03:44,144 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000011_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=189561
+		FILE: Number of bytes written=20779405
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1620207460
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=27
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=707308
+		Map output records=707305
+		Map output bytes=9902270
+		Map output materialized bytes=11316886
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=707305
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1109917696
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:44,144 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000011_0
+2024-02-21 20:03:44,144 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_m_000012_0
+2024-02-21 20:03:44,146 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:44,146 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:44,146 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:44,149 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/input/access_log:1476395008+134217728
+2024-02-21 20:03:44,160 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:44,161 INFO mapred.MapTask: numReduceTasks: 1
+2024-02-21 20:03:44,174 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-21 20:03:44,175 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-21 20:03:44,175 INFO mapred.MapTask: soft limit at 83886080
+2024-02-21 20:03:44,175 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-21 20:03:44,175 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-21 20:03:44,176 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-21 20:03:44,176 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/mapper2.py]
+2024-02-21 20:03:44,188 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,188 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,188 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,214 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,215 INFO streaming.PipeMapRed: Records R/W=1376/1
+2024-02-21 20:03:44,238 INFO streaming.PipeMapRed: R/W/S=10000/9197/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,439 INFO streaming.PipeMapRed: R/W/S=100000/99033/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,664 INFO streaming.PipeMapRed: R/W/S=200000/199239/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,898 INFO streaming.PipeMapRed: R/W/S=300000/298859/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:44,898 INFO mapreduce.Job:  map 100% reduce 0%
+2024-02-21 20:03:45,126 INFO streaming.PipeMapRed: R/W/S=400000/399065/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:45,353 INFO streaming.PipeMapRed: R/W/S=500000/498993/0 in:500000=500000/1 [rec/s] out:499004=499004/1 [rec/s]
+2024-02-21 20:03:45,575 INFO streaming.PipeMapRed: R/W/S=600000/598891/0 in:600000=600000/1 [rec/s] out:598891=598891/1 [rec/s]
+2024-02-21 20:03:45,813 INFO streaming.PipeMapRed: R/W/S=700000/699097/0 in:700000=700000/1 [rec/s] out:699097=699097/1 [rec/s]
+2024-02-21 20:03:45,833 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:45,834 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:45,837 INFO mapred.LocalJobRunner: 
+2024-02-21 20:03:45,837 INFO mapred.MapTask: Starting flush of map output
+2024-02-21 20:03:45,837 INFO mapred.MapTask: Spilling map output
+2024-02-21 20:03:45,837 INFO mapred.MapTask: bufstart = 0; bufend = 9872534; bufvoid = 104857600
+2024-02-21 20:03:45,837 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 23393676(93574704); length = 2820721/6553600
+2024-02-21 20:03:45,899 INFO mapreduce.Job:  map 92% reduce 0%
+2024-02-21 20:03:46,153 INFO mapred.MapTask: Finished spill 0
+2024-02-21 20:03:46,156 INFO mapred.Task: Task:attempt_local1070047074_0001_m_000012_0 is done. And is in the process of committing
+2024-02-21 20:03:46,162 INFO mapred.LocalJobRunner: Records R/W=1376/1
+2024-02-21 20:03:46,162 INFO mapred.Task: Task 'attempt_local1070047074_0001_m_000012_0' done.
+2024-02-21 20:03:46,163 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_m_000012_0: Counters: 23
+	File System Counters
+		FILE: Number of bytes read=189864
+		FILE: Number of bytes written=32062339
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1754429284
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=29
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=1
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=705188
+		Map output records=705181
+		Map output bytes=9872534
+		Map output materialized bytes=11282902
+		Input split bytes=100
+		Combine input records=0
+		Spilled Records=705181
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=4
+		Total committed heap usage (bytes)=1201668096
+	File Input Format Counters 
+		Bytes Read=134221824
+2024-02-21 20:03:46,164 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_m_000012_0
+2024-02-21 20:03:46,164 INFO mapred.LocalJobRunner: map task executor complete.
+2024-02-21 20:03:46,169 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2024-02-21 20:03:46,169 INFO mapred.LocalJobRunner: Starting task: attempt_local1070047074_0001_r_000000_0
+2024-02-21 20:03:46,181 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-21 20:03:46,181 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-21 20:03:46,182 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-21 20:03:46,188 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@47e84cdb
+2024-02-21 20:03:46,191 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2024-02-21 20:03:46,215 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1941805440, maxSingleShuffleLimit=485451360, mergeThreshold=1281591680, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2024-02-21 20:03:46,222 INFO reduce.EventFetcher: attempt_local1070047074_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2024-02-21 20:03:46,256 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000006_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,262 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000006_0
+2024-02-21 20:03:46,266 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->2
+2024-02-21 20:03:46,270 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000000_0 decomp: 812098 len: 812102 to MEMORY
+2024-02-21 20:03:46,272 INFO reduce.InMemoryMapOutput: Read 812098 bytes from map-output for attempt_local1070047074_0001_m_000000_0
+2024-02-21 20:03:46,272 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 812098, inMemoryMapOutputs.size() -> 2, commitMemory -> 2, usedMemory ->812100
+2024-02-21 20:03:46,275 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000005_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,276 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000005_0
+2024-02-21 20:03:46,276 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 3, commitMemory -> 812100, usedMemory ->812102
+2024-02-21 20:03:46,278 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000012_0 decomp: 11282898 len: 11282902 to MEMORY
+2024-02-21 20:03:46,291 INFO reduce.InMemoryMapOutput: Read 11282898 bytes from map-output for attempt_local1070047074_0001_m_000012_0
+2024-02-21 20:03:46,291 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 11282898, inMemoryMapOutputs.size() -> 4, commitMemory -> 812102, usedMemory ->12095000
+2024-02-21 20:03:46,294 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000011_0 decomp: 11316882 len: 11316886 to MEMORY
+2024-02-21 20:03:46,305 INFO reduce.InMemoryMapOutput: Read 11316882 bytes from map-output for attempt_local1070047074_0001_m_000011_0
+2024-02-21 20:03:46,305 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 11316882, inMemoryMapOutputs.size() -> 5, commitMemory -> 12095000, usedMemory ->23411882
+2024-02-21 20:03:46,308 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000010_0 decomp: 7940866 len: 7940870 to MEMORY
+2024-02-21 20:03:46,315 INFO reduce.InMemoryMapOutput: Read 7940866 bytes from map-output for attempt_local1070047074_0001_m_000010_0
+2024-02-21 20:03:46,315 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 7940866, inMemoryMapOutputs.size() -> 6, commitMemory -> 23411882, usedMemory ->31352748
+2024-02-21 20:03:46,316 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000004_0 decomp: 1618 len: 1622 to MEMORY
+2024-02-21 20:03:46,317 INFO reduce.InMemoryMapOutput: Read 1618 bytes from map-output for attempt_local1070047074_0001_m_000004_0
+2024-02-21 20:03:46,317 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 1618, inMemoryMapOutputs.size() -> 7, commitMemory -> 31352748, usedMemory ->31354366
+2024-02-21 20:03:46,321 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000009_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,323 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000009_0
+2024-02-21 20:03:46,323 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 8, commitMemory -> 31354366, usedMemory ->31354368
+2024-02-21 20:03:46,326 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000003_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,327 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000003_0
+2024-02-21 20:03:46,327 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 9, commitMemory -> 31354368, usedMemory ->31354370
+2024-02-21 20:03:46,330 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000002_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,331 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000002_0
+2024-02-21 20:03:46,331 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 10, commitMemory -> 31354370, usedMemory ->31354372
+2024-02-21 20:03:46,332 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000001_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,332 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000001_0
+2024-02-21 20:03:46,333 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 11, commitMemory -> 31354372, usedMemory ->31354374
+2024-02-21 20:03:46,336 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000008_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,339 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000008_0
+2024-02-21 20:03:46,339 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 12, commitMemory -> 31354374, usedMemory ->31354376
+2024-02-21 20:03:46,342 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1070047074_0001_m_000007_0 decomp: 2 len: 6 to MEMORY
+2024-02-21 20:03:46,342 INFO reduce.InMemoryMapOutput: Read 2 bytes from map-output for attempt_local1070047074_0001_m_000007_0
+2024-02-21 20:03:46,342 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 2, inMemoryMapOutputs.size() -> 13, commitMemory -> 31354376, usedMemory ->31354378
+2024-02-21 20:03:46,345 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2024-02-21 20:03:46,347 INFO mapred.LocalJobRunner: 13 / 13 copied.
+2024-02-21 20:03:46,348 INFO reduce.MergeManagerImpl: finalMerge called with 13 in-memory map-outputs and 0 on-disk map-outputs
+2024-02-21 20:03:46,356 INFO mapred.Merger: Merging 13 sorted segments
+2024-02-21 20:03:46,358 INFO mapred.Merger: Down to the last merge-pass, with 5 segments left of total size: 31354292 bytes
+2024-02-21 20:03:46,900 INFO mapreduce.Job:  map 100% reduce 0%
+2024-02-21 20:03:47,337 INFO reduce.MergeManagerImpl: Merged 13 segments, 31354378 bytes to disk to satisfy reduce memory limit
+2024-02-21 20:03:47,337 INFO reduce.MergeManagerImpl: Merging 1 files, 31354358 bytes from disk
+2024-02-21 20:03:47,339 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2024-02-21 20:03:47,339 INFO mapred.Merger: Merging 1 sorted segments
+2024-02-21 20:03:47,340 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 31354340 bytes
+2024-02-21 20:03:47,340 INFO mapred.LocalJobRunner: 13 / 13 copied.
+2024-02-21 20:03:47,344 INFO streaming.PipeMapRed: PipeMapRed exec [/opt/code/reducer2.py]
+2024-02-21 20:03:47,348 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2024-02-21 20:03:47,348 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2024-02-21 20:03:47,401 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,401 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,406 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,421 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,451 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,604 INFO streaming.PipeMapRed: R/W/S=100000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,726 INFO streaming.PipeMapRed: R/W/S=200000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,848 INFO streaming.PipeMapRed: R/W/S=300000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:47,966 INFO streaming.PipeMapRed: R/W/S=400000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:48,083 INFO streaming.PipeMapRed: R/W/S=500000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:48,202 INFO streaming.PipeMapRed: R/W/S=600000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:48,314 INFO streaming.PipeMapRed: R/W/S=700000/0/0 in:NA [rec/s] out:NA [rec/s]
+2024-02-21 20:03:48,429 INFO streaming.PipeMapRed: R/W/S=800000/0/0 in:800000=800000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:48,548 INFO streaming.PipeMapRed: R/W/S=900000/0/0 in:900000=900000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:48,657 INFO streaming.PipeMapRed: R/W/S=1000000/0/0 in:1000000=1000000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:48,773 INFO streaming.PipeMapRed: R/W/S=1100000/0/0 in:1100000=1100000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:48,907 INFO streaming.PipeMapRed: R/W/S=1200000/0/0 in:1200000=1200000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:49,021 INFO streaming.PipeMapRed: R/W/S=1300000/0/0 in:1300000=1300000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:49,141 INFO streaming.PipeMapRed: R/W/S=1400000/0/0 in:1400000=1400000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:49,256 INFO streaming.PipeMapRed: R/W/S=1500000/0/0 in:1500000=1500000/1 [rec/s] out:0=0/1 [rec/s]
+2024-02-21 20:03:49,369 INFO streaming.PipeMapRed: R/W/S=1600000/0/0 in:800000=1600000/2 [rec/s] out:0=0/2 [rec/s]
+2024-02-21 20:03:49,491 INFO streaming.PipeMapRed: R/W/S=1700000/0/0 in:850000=1700000/2 [rec/s] out:0=0/2 [rec/s]
+2024-02-21 20:03:49,605 INFO streaming.PipeMapRed: R/W/S=1800000/0/0 in:900000=1800000/2 [rec/s] out:0=0/2 [rec/s]
+2024-02-21 20:03:49,713 INFO streaming.PipeMapRed: R/W/S=1900000/0/0 in:950000=1900000/2 [rec/s] out:0=0/2 [rec/s]
+2024-02-21 20:03:49,799 INFO streaming.PipeMapRed: Records R/W=1959647/1
+2024-02-21 20:03:49,803 INFO streaming.PipeMapRed: MRErrorThread done
+2024-02-21 20:03:49,804 INFO streaming.PipeMapRed: mapRedFinished
+2024-02-21 20:03:49,852 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-21 20:03:49,883 INFO mapred.Task: Task:attempt_local1070047074_0001_r_000000_0 is done. And is in the process of committing
+2024-02-21 20:03:49,888 INFO mapred.LocalJobRunner: 13 / 13 copied.
+2024-02-21 20:03:49,888 INFO mapred.Task: Task attempt_local1070047074_0001_r_000000_0 is allowed to commit now
+2024-02-21 20:03:49,911 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1070047074_0001_r_000000_0' to hdfs://localhost:9000/user/root/output/output2
+2024-02-21 20:03:49,913 INFO mapred.LocalJobRunner: Records R/W=1959647/1 > reduce
+2024-02-21 20:03:49,913 INFO mapred.Task: Task 'attempt_local1070047074_0001_r_000000_0' done.
+2024-02-21 20:03:49,914 INFO mapred.Task: Final Counters for attempt_local1070047074_0001_r_000000_0: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=62899068
+		FILE: Number of bytes written=63416697
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=1754429284
+		HDFS: Number of bytes written=20
+		HDFS: Number of read operations=34
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=3
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=31354430
+		Reduce input records=1959647
+		Reduce output records=1
+		Spilled Records=1959647
+		Shuffled Maps =13
+		Failed Shuffles=0
+		Merged Map outputs=13
+		GC time elapsed (ms)=0
+		Total committed heap usage (bytes)=1201668096
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=20
+2024-02-21 20:03:49,917 INFO mapred.LocalJobRunner: Finishing task: attempt_local1070047074_0001_r_000000_0
+2024-02-21 20:03:49,917 INFO mapred.LocalJobRunner: reduce task executor complete.
+2024-02-21 20:03:50,902 INFO mapreduce.Job:  map 100% reduce 100%
+2024-02-21 20:03:50,902 INFO mapreduce.Job: Job job_local1070047074_0001 completed successfully
+2024-02-21 20:03:50,932 INFO mapreduce.Job: Counters: 36
+	File System Counters
+		FILE: Number of bytes read=65307826
+		FILE: Number of bytes written=140928604
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=14092707704
+		HDFS: Number of bytes written=20
+		HDFS: Number of read operations=255
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=16
+		HDFS: Number of bytes read erasure-coded=0
+	Map-Reduce Framework
+		Map input records=9710351
+		Map output records=1959647
+		Map output bytes=27435058
+		Map output materialized bytes=31354430
+		Input split bytes=1300
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1
+		Reduce shuffle bytes=31354430
+		Reduce input records=1959647
+		Reduce output records=1
+		Spilled Records=3919294
+		Shuffled Maps =13
+		Failed Shuffles=0
+		Merged Map outputs=13
+		GC time elapsed (ms)=414
+		Total committed heap usage (bytes)=13140230144
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=1754429284
+	File Output Format Counters 
+		Bytes Written=20
+2024-02-21 20:03:50,932 INFO streaming.StreamJob: Output directory: output/output2
