@@ -1,12 +1,8 @@
-#!/usr/bin/env python
-
+#!/usr/bin/env python3
 import sys
-
-path_count = 0
-
+total = 0
+path = ''
 for line in sys.stdin:
-    path, count = line.strip().split("\t")
-    path_count += int(count)
-
-# output the count for the last path
-print(f"{path}\t{path_count}")
+    path,count = line.strip().split("\t")
+    total += int(count)
+print(f"{path}\t{total}")

@@ -1,0 +1,26 @@
+
+#run docker image
+docker run -dit ubuntu
+
+#run Dockerfile to build container
+Docker build . 
+
+
+
+service start ssh
+cd /opt/hadoop
+
+hdfs dfs -put access_log input
+
+
+sbin/start-dfs.sh
+sbin/start-yarn.sh
+sbin/mr-jobhistory-daemon.sh
+jps
+
+or just the /bootstrap.sh
+
+Sources:
+https://docs.docker.com/engine/reference/builder/
+https://stackoverflow.com/questions/17569423/what-is-best-way-to-start-and-stop-hadoop-ecosystem-with-command-line
+https://www.oreilly.com/content/hadoop-with-python/
