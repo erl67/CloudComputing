@@ -23,4 +23,6 @@ or just the /bootstrap.sh
 Sources:
 https://docs.docker.com/engine/reference/builder/
 https://stackoverflow.com/questions/17569423/what-is-best-way-to-start-and-stop-hadoop-ecosystem-with-command-line
+https://hadoop.apache.org/docs/r1.2.1/streaming.html
 https://www.oreilly.com/content/hadoop-with-python/
+https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html
