@@ -1,0 +1,461 @@
+# ls
+bin  boot  bootstrap.sh  dev  etc  hadoop-3.2.1.tar.gz  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+# cd sbin
+# ls
+agetty         ctrlaltdel  e2undo       fsck.minix    initctl        mke2fs       mkhomedir_helper       raw           start-stop-daemon  tune2fs
+badblocks      debugfs     fdisk        fsfreeze      installkernel  mkfs         mkswap                 reboot        sulogin
+  unix_chkpwd
+blkdeactivate  dmsetup     findfs       fstab-decode  isosize        mkfs.bfs     pam_extrausers_chkpwd  resize2fs     swaplabel                              unix_update
+blkdiscard     dmstats     fsck         fstrim        killall5       mkfs.cramfs  pam_extrausers_update  runlevel      swapoff
+  wipefs
+blkid          dumpe2fs    fsck.cramfs  getty         ldconfig       mkfs.ext2    pam_tally              runuser       swapon
+  zramctl
+blockdev       e2fsck      fsck.ext2    halt          ldconfig.real  mkfs.ext3    pam_tally2             sfdisk        switch_root
+cfdisk         e2image     fsck.ext3    hwclock       logsave        mkfs.ext4    pivot_root             shadowconfig  sysctl
+chcpu          e2label     fsck.ext4    init          losetup        mkfs.minix   poweroff               shutdown      telinit
+# pwd
+/sbin
+# cd /opt/hadoop/sbin
+# ls
+FederationStateStore   httpfs.sh                start-all.cmd      start-dfs.sh         stop-all.cmd      stop-dfs.sh        workers.sh
+distribute-exclude.sh  kms.sh                   start-all.sh       start-secure-dns.sh  stop-all.sh       stop-secure-dns.sh  yarn-daemon.sh
+hadoop-daemon.sh       mr-jobhistory-daemon.sh  start-balancer.sh  start-yarn.cmd       stop-balancer.sh  stop-yarn.cmd       yarn-daemons.sh
+hadoop-daemons.sh      refresh-namenodes.sh     start-dfs.cmd      start-yarn.sh        stop-dfs.cmd      stop-yarn.sh
+# vim start-dfs.sh
+# ls -la
+total 140
+drwxr-xr-x 1 1001 1001  4096 Feb 20 23:31 .
+drwxr-xr-x 1 1001 1001  4096 Feb 20 23:12 ..
+-rw-r--r-- 1 root root 16384 Feb 20 23:30 .start-dfs.sh.swp
+drwxr-xr-x 4 1001 1001  4096 Sep 10  2019 FederationStateStore
+-rwxr-xr-x 1 1001 1001  2756 Sep 10  2019 distribute-exclude.sh
+-rwxr-xr-x 1 1001 1001  1983 Sep 10  2019 hadoop-daemon.sh
+-rwxr-xr-x 1 1001 1001  2522 Sep 10  2019 hadoop-daemons.sh
+-rwxr-xr-x 1 1001 1001  1542 Sep 10  2019 httpfs.sh
+-rwxr-xr-x 1 1001 1001  1500 Sep 10  2019 kms.sh
+-rwxr-xr-x 1 1001 1001  1841 Sep 10  2019 mr-jobhistory-daemon.sh
+-rwxr-xr-x 1 1001 1001  2086 Sep 10  2019 refresh-namenodes.sh
+-rwxr-xr-x 1 1001 1001  1779 Sep 10  2019 start-all.cmd
+-rwxr-xr-x 1 1001 1001  2221 Sep 10  2019 start-all.sh
+-rwxr-xr-x 1 1001 1001  1880 Sep 10  2019 start-balancer.sh
+-rwxr-xr-x 1 1001 1001  1401 Sep 10  2019 start-dfs.cmd
+-rwxr-xr-x 1 1001 1001  5170 Sep 10  2019 start-dfs.sh
+-rwxr-xr-x 1 1001 1001  1793 Sep 10  2019 start-secure-dns.sh
+-rwxr-xr-x 1 1001 1001  1571 Sep 10  2019 start-yarn.cmd
+-rwxr-xr-x 1 1001 1001  3342 Sep 10  2019 start-yarn.sh
+-rwxr-xr-x 1 1001 1001  1770 Sep 10  2019 stop-all.cmd
+-rwxr-xr-x 1 1001 1001  2166 Sep 10  2019 stop-all.sh
+-rwxr-xr-x 1 1001 1001  1783 Sep 10  2019 stop-balancer.sh
+-rwxr-xr-x 1 1001 1001  1455 Sep 10  2019 stop-dfs.cmd
+-rwxr-xr-x 1 1001 1001  3898 Sep 10  2019 stop-dfs.sh
+-rwxr-xr-x 1 1001 1001  1756 Sep 10  2019 stop-secure-dns.sh
+-rwxr-xr-x 1 1001 1001  1642 Sep 10  2019 stop-yarn.cmd
+-rwxr-xr-x 1 1001 1001  3083 Sep 10  2019 stop-yarn.sh
+-rwxr-xr-x 1 1001 1001  1982 Sep 10  2019 workers.sh
+-rwxr-xr-x 1 1001 1001  1814 Sep 10  2019 yarn-daemon.sh
+-rwxr-xr-x 1 1001 1001  2328 Sep 10  2019 yarn-daemons.sh
+# rm .start-dfs.sh.swp
+# vim start-dfs.sh
+# vim stop-dfs.sh
+# vim stop-dfs.sh
+# bash
+root@fa8638416a92:/opt/hadoop/sbin# ls
+FederationStateStore   httpfs.sh                start-all.cmd      start-dfs.sh         stop-all.cmd      stop-dfs.sh         workers.sh
+distribute-exclude.sh  kms.sh                   start-all.sh       start-secure-dns.sh  stop-all.sh       stop-secure-dns.sh  yarn-daemon.sh
+hadoop-daemon.sh       mr-jobhistory-daemon.sh  start-balancer.sh  start-yarn.cmd       stop-balancer.sh  stop-yarn.cmd       yarn-daemons.sh
+hadoop-daemons.sh      refresh-namenodes.sh     start-dfs.cmd      start-yarn.sh        stop-dfs.cmd      stop-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# vim start-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# vim start-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# vim stop-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# cd ..
+root@fa8638416a92:/opt/hadoop# ls
+LICENSE.txt  NOTICE.txt  README.txt  access_log  bin  etc  include  lib  libexec  logs  sbin  share
+root@fa8638416a92:/opt/hadoop# cd etc
+root@fa8638416a92:/opt/hadoop/etc# ls
+hadoop
+root@fa8638416a92:/opt/hadoop/etc# cd hadoop
+root@fa8638416a92:/opt/hadoop/etc/hadoop# ls
+capacity-scheduler.xml      hadoop-policy.xml                 kms-acls.xml          mapred-queues.xml.template     yarn-env.cmd
+configuration.xsl           hadoop-user-functions.sh.example  kms-env.sh            mapred-site.xml                yarn-env.sh
+container-executor.cfg      hdfs-site.xml                     kms-log4j.properties  shellprofile.d                 yarn-site.xml
+core-site.xml               httpfs-env.sh                     kms-site.xml          ssl-client.xml.example         yarnservice-log4j.properties
+hadoop-env.cmd              httpfs-log4j.properties           log4j.properties      ssl-server.xml.example
+hadoop-env.sh               httpfs-signature.secret           mapred-env.cmd        user_ec_policies.xml.template
+hadoop-metrics2.properties  httpfs-site.xml                   mapred-env.sh         workers
+root@fa8638416a92:/opt/hadoop/etc/hadoop# vim core-site.xml
+root@fa8638416a92:/opt/hadoop/etc/hadoop# vim hdfs-site.xml
+root@fa8638416a92:/opt/hadoop/etc/hadoop# vim yarn-site.xml
+root@fa8638416a92:/opt/hadoop/etc/hadoop# vim mapred-site.xml
+root@fa8638416a92:/opt/hadoop/etc/hadoop# ls
+capacity-scheduler.xml      hadoop-policy.xml                 kms-acls.xml          mapred-queues.xml.template     yarn-env.cmd
+configuration.xsl           hadoop-user-functions.sh.example  kms-env.sh            mapred-site.xml                yarn-env.sh
+container-executor.cfg      hdfs-site.xml                     kms-log4j.properties  shellprofile.d                 yarn-site.xml
+core-site.xml               httpfs-env.sh                     kms-site.xml          ssl-client.xml.example         yarnservice-log4j.properties
+hadoop-env.cmd              httpfs-log4j.properties           log4j.properties      ssl-server.xml.example
+hadoop-env.sh               httpfs-signature.secret           mapred-env.cmd        user_ec_policies.xml.template
+hadoop-metrics2.properties  httpfs-site.xml                   mapred-env.sh         workers
+root@fa8638416a92:/opt/hadoop/etc/hadoop# cd ../..
+root@fa8638416a92:/opt/hadoop# ls
+LICENSE.txt  NOTICE.txt  README.txt  access_log  bin  etc  include  lib  libexec  logs  sbin  share
+root@fa8638416a92:/opt/hadoop# bin/hadoop namenode -format
+WARNING: Use of this script to execute namenode is deprecated.
+WARNING: Attempting to execute replacement "hdfs namenode" instead.
+
+2024-02-20 23:47:58,955 INFO namenode.NameNode: STARTUP_MSG:
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = fa8638416a92/172.17.0.2
+STARTUP_MSG:   args = [-format]
+STARTUP_MSG:   version = 3.2.1
+STARTUP_MSG:   classpath = /opt/hadoop/etc/hadoop:/opt/hadoop/share/hadoop/common/lib/jetty-server-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/hadoop-annotations-3.2.1.jar:/opt/hadoop/share/hadoop/common/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/kerby-util-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/jetty-http-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/curator-client-2.13.0.jar:/opt/hadoop/share/hadoop/common/lib/woodstox-core-5.0.3.jar:/opt/hadoop/share/hadoop/common/lib/javax.servlet-api-3.1.0.jar:/opt/hadoop/share/hadoop/common/lib/kerby-pkix-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/paranamer-2.3.jar:/opt/hadoop/share/hadoop/common/lib/httpcore-4.4.10.jar:/opt/hadoop/share/hadoop/common/lib/kerb-core-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/kerby-asn1-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/httpclient-4.5.6.jar:/opt/hadoop/share/hadoop/common/lib/jetty-xml-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/checker-qual-2.5.2.jar:/opt/hadoop/share/hadoop/common/lib/jackson-databind-2.9.8.jar:/opt/hadoop/share/hadoop/common/lib/commons-net-3.6.jar:/opt/hadoop/share/hadoop/common/lib/log4j-1.2.17.jar:/opt/hadoop/share/hadoop/common/lib/commons-lang3-3.7.jar:/opt/hadoop/share/hadoop/common/lib/json-smart-2.3.jar:/opt/hadoop/share/hadoop/common/lib/kerb-admin-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/hadoop-auth-3.2.1.jar:/opt/hadoop/share/hadoop/common/lib/accessors-smart-1.2.jar:/opt/hadoop/share/hadoop/common/lib/kerb-identity-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/nimbus-jose-jwt-4.41.1.jar:/opt/hadoop/share/hadoop/common/lib/commons-cli-1.2.jar:/opt/hadoop/share/hadoop/common/lib/gson-2.2.4.jar:/opt/hadoop/share/hadoop/common/lib/j2objc-annotations-1.1.jar:/opt/hadoop/share/hadoop/common/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/metrics-core-3.2.4.jar:/opt/hadoop/share/hadoop/common/lib/jettison-1.1.jar:/opt/hadoop/share/hadoop/common/lib/jsr305-3.0.0.jar:/opt/hadoop/share/hadoop/common/lib/snappy-java-1.0.5.jar:/opt/hadoop/share/hadoop/common/lib/slf4j-api-1.7.25.jar:/opt/hadoop/share/hadoop/common/lib/jetty-util-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/share/hadoop/common/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/hadoop/share/hadoop/common/lib/avro-1.7.7.jar:/opt/hadoop/share/hadoop/common/lib/jersey-server-1.19.jar:/opt/hadoop/share/hadoop/common/lib/re2j-1.1.jar:/opt/hadoop/share/hadoop/common/lib/jsch-0.1.54.jar:/opt/hadoop/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/share/hadoop/common/lib/jackson-annotations-2.9.8.jar:/opt/hadoop/share/hadoop/common/lib/jetty-security-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/commons-text-1.4.jar:/opt/hadoop/share/hadoop/common/lib/animal-sniffer-annotations-1.17.jar:/opt/hadoop/share/hadoop/common/lib/jetty-io-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/common/lib/netty-3.10.5.Final.jar:/opt/hadoop/share/hadoop/common/lib/dnsjava-2.1.7.jar:/opt/hadoop/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/opt/hadoop/share/hadoop/common/lib/commons-compress-1.18.jar:/opt/hadoop/share/hadoop/common/lib/kerb-server-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/commons-codec-1.11.jar:/opt/hadoop/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/share/hadoop/common/lib/stax2-api-3.1.4.jar:/opt/hadoop/share/hadoop/common/lib/guava-27.0-jre.jar:/opt/hadoop/share/hadoop/common/lib/kerby-xdr-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/jersey-core-1.19.jar:/opt/hadoop/share/hadoop/common/lib/jsp-api-2.1.jar:/opt/hadoop/share/hadoop/common/lib/jersey-servlet-1.19.jar:/opt/hadoop/share/hadoop/common/lib/jaxb-api-2.2.11.jar:/opt/hadoop/share/hadoop/common/lib/kerb-simplekdc-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/audience-annotations-0.5.0.jar:/opt/hadoop/share/hadoop/common/lib/jsr311-api-1.1.1.jar:/opt/hadoop/share/hadoop/common/lib/curator-recipes-2.13.0.jar:/opt/hadoop/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/opt/hadoop/share/hadoop/common/lib/commons-beanutils-1.9.3.jar:/opt/hadoop/share/hadoop/common/lib/jul-to-slf4j-1.7.25.jar:/opt/hadoop/share/hadoop/common/lib/asm-5.0.4.jar:/opt/hadoop/share/hadoop/common/lib/commons-logging-1.1.3.jar:/opt/hadoop/share/hadoop/common/lib/kerb-crypto-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/failureaccess-1.0.jar:/opt/hadoop/share/hadoop/common/lib/commons-io-2.5.jar:/opt/hadoop/share/hadoop/common/lib/commons-math3-3.1.1.jar:/opt/hadoop/share/hadoop/common/lib/jersey-json-1.19.jar:/opt/hadoop/share/hadoop/common/lib/slf4j-log4j12-1.7.25.jar:/opt/hadoop/share/hadoop/common/lib/jcip-annotations-1.0-1.jar:/opt/hadoop/share/hadoop/common/lib/error_prone_annotations-2.2.0.jar:/opt/hadoop/share/hadoop/common/lib/commons-configuration2-2.1.1.jar:/opt/hadoop/share/hadoop/common/lib/curator-framework-2.13.0.jar:/opt/hadoop/share/hadoop/common/lib/htrace-core4-4.1.0-incubating.jar:/opt/hadoop/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/share/hadoop/common/lib/kerb-common-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/kerby-config-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/kerb-util-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/jackson-core-2.9.8.jar:/opt/hadoop/share/hadoop/common/lib/token-provider-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/kerb-client-1.0.1.jar:/opt/hadoop/share/hadoop/common/lib/zookeeper-3.4.13.jar:/opt/hadoop/share/hadoop/common/lib/commons-collections-3.2.2.jar:/opt/hadoop/share/hadoop/common/hadoop-nfs-3.2.1.jar:/opt/hadoop/share/hadoop/common/hadoop-common-3.2.1-tests.jar:/opt/hadoop/share/hadoop/common/hadoop-common-3.2.1.jar:/opt/hadoop/share/hadoop/common/hadoop-kms-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs:/opt/hadoop/share/hadoop/hdfs/lib/netty-all-4.0.52.Final.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-server-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/hadoop-annotations-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-webapp-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerby-util-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/okhttp-2.7.5.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-http-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/curator-client-2.13.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/woodstox-core-5.0.3.jar:/opt/hadoop/share/hadoop/hdfs/lib/javax.servlet-api-3.1.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerby-pkix-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/paranamer-2.3.jar:/opt/hadoop/share/hadoop/hdfs/lib/httpcore-4.4.10.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-core-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerby-asn1-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/httpclient-4.5.6.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-xml-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/checker-qual-2.5.2.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-databind-2.9.8.jar:/opt/hadoop/share/hadoop/hdfs/lib/okio-1.6.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-util-ajax-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-net-3.6.jar:/opt/hadoop/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-lang3-3.7.jar:/opt/hadoop/share/hadoop/hdfs/lib/json-smart-2.3.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-admin-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/hadoop-auth-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/accessors-smart-1.2.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-identity-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/nimbus-jose-jwt-4.41.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/opt/hadoop/share/hadoop/hdfs/lib/gson-2.2.4.jar:/opt/hadoop/share/hadoop/hdfs/lib/j2objc-annotations-1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-servlet-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/jettison-1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jsr305-3.0.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/snappy-java-1.0.5.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-util-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/opt/hadoop/share/hadoop/hdfs/lib/avro-1.7.7.jar:/opt/hadoop/share/hadoop/hdfs/lib/jersey-server-1.19.jar:/opt/hadoop/share/hadoop/hdfs/lib/re2j-1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jsch-0.1.54.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-annotations-2.9.8.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-security-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-text-1.4.jar:/opt/hadoop/share/hadoop/hdfs/lib/json-simple-1.1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/animal-sniffer-annotations-1.17.jar:/opt/hadoop/share/hadoop/hdfs/lib/leveldbjni-all-1.8.jar:/opt/hadoop/share/hadoop/hdfs/lib/jetty-io-9.3.24.v20180605.jar:/opt/hadoop/share/hadoop/hdfs/lib/netty-3.10.5.Final.jar:/opt/hadoop/share/hadoop/hdfs/lib/dnsjava-2.1.7.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-xc-1.9.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-compress-1.18.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-server-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-codec-1.11.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-jaxrs-1.9.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/stax2-api-3.1.4.jar:/opt/hadoop/share/hadoop/hdfs/lib/guava-27.0-jre.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerby-xdr-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jersey-core-1.19.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/jersey-servlet-1.19.jar:/opt/hadoop/share/hadoop/hdfs/lib/jaxb-api-2.2.11.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-simplekdc-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/audience-annotations-0.5.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/jsr311-api-1.1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/curator-recipes-2.13.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-beanutils-1.9.3.jar:/opt/hadoop/share/hadoop/hdfs/lib/asm-5.0.4.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-crypto-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/failureaccess-1.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-io-2.5.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-math3-3.1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jersey-json-1.19.jar:/opt/hadoop/share/hadoop/hdfs/lib/jcip-annotations-1.0-1.jar:/opt/hadoop/share/hadoop/hdfs/lib/error_prone_annotations-2.2.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-configuration2-2.1.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/curator-framework-2.13.0.jar:/opt/hadoop/share/hadoop/hdfs/lib/htrace-core4-4.1.0-incubating.jar:/opt/hadoop/share/hadoop/hdfs/lib/jaxb-impl-2.2.3-1.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-common-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerby-config-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-util-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/jackson-core-2.9.8.jar:/opt/hadoop/share/hadoop/hdfs/lib/token-provider-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/kerb-client-1.0.1.jar:/opt/hadoop/share/hadoop/hdfs/lib/zookeeper-3.4.13.jar:/opt/hadoop/share/hadoop/hdfs/lib/commons-collections-3.2.2.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1-tests.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-httpfs-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-native-client-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1-tests.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-client-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-nfs-3.2.1.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-rbf-3.2.1-tests.jar:/opt/hadoop/share/hadoop/hdfs/hadoop-hdfs-3.2.1-tests.jar:/opt/hadoop/share/hadoop/mapreduce/lib/junit-4.11.jar:/opt/hadoop/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1-tests.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-common-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-uploader-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-app-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-core-3.2.1.jar:/opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-client-nativetask-3.2.1.jar:/opt/hadoop/share/hadoop/yarn:/opt/hadoop/share/hadoop/yarn/lib/mssql-jdbc-6.2.1.jre7.jar:/opt/hadoop/share/hadoop/yarn/lib/aopalliance-1.0.jar:/opt/hadoop/share/hadoop/yarn/lib/HikariCP-java7-2.4.12.jar:/opt/hadoop/share/hadoop/yarn/lib/swagger-annotations-1.5.4.jar:/opt/hadoop/share/hadoop/yarn/lib/json-io-2.5.1.jar:/opt/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-json-provider-2.9.8.jar:/opt/hadoop/share/hadoop/yarn/lib/bcprov-jdk15on-1.60.jar:/opt/hadoop/share/hadoop/yarn/lib/snakeyaml-1.16.jar:/opt/hadoop/share/hadoop/yarn/lib/guice-4.0.jar:/opt/hadoop/share/hadoop/yarn/lib/metrics-core-3.2.4.jar:/opt/hadoop/share/hadoop/yarn/lib/objenesis-1.0.jar:/opt/hadoop/share/hadoop/yarn/lib/jackson-module-jaxb-annotations-2.9.8.jar:/opt/hadoop/share/hadoop/yarn/lib/jersey-guice-1.19.jar:/opt/hadoop/share/hadoop/yarn/lib/java-util-1.9.0.jar:/opt/hadoop/share/hadoop/yarn/lib/guice-servlet-4.0.jar:/opt/hadoop/share/hadoop/yarn/lib/fst-2.50.jar:/opt/hadoop/share/hadoop/yarn/lib/ehcache-3.3.1.jar:/opt/hadoop/share/hadoop/yarn/lib/jersey-client-1.19.jar:/opt/hadoop/share/hadoop/yarn/lib/bcpkix-jdk15on-1.60.jar:/opt/hadoop/share/hadoop/yarn/lib/geronimo-jcache_1.0_spec-1.0-alpha-1.jar:/opt/hadoop/share/hadoop/yarn/lib/javax.inject-1.jar:/opt/hadoop/share/hadoop/yarn/lib/jackson-jaxrs-base-2.9.8.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-common-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-api-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-router-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-nodemanager-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-client-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-services-api-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-web-proxy-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-registry-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-sharedcachemanager-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-timeline-pluginstorage-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-submarine-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-services-core-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-tests-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-3.2.1.jar:/opt/hadoop/share/hadoop/yarn/hadoop-yarn-server-common-3.2.1.jar
+STARTUP_MSG:   build = https://gitbox.apache.org/repos/asf/hadoop.git -r b3cbbb467e22ea829b3808f4b7b01d07e0bf3842; compiled by 'rohithsharmaks' on 2019-09-10T15:56Z
+STARTUP_MSG:   java = 1.8.0_362
+************************************************************/
+2024-02-20 23:47:58,983 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+2024-02-20 23:47:59,127 INFO namenode.NameNode: createNameNode [-format]
+Formatting using clusterid: CID-68a797e6-210e-428a-b16e-98f9080bbd21
+2024-02-20 23:47:59,740 INFO namenode.FSEditLog: Edit logging is async:true
+2024-02-20 23:47:59,771 INFO namenode.FSNamesystem: KeyProvider: null
+2024-02-20 23:47:59,774 INFO namenode.FSNamesystem: fsLock is fair: true
+2024-02-20 23:47:59,775 INFO namenode.FSNamesystem: Detailed lock hold time metrics enabled: false
+2024-02-20 23:47:59,785 INFO namenode.FSNamesystem: fsOwner             = root (auth:SIMPLE)
+2024-02-20 23:47:59,786 INFO namenode.FSNamesystem: supergroup          = supergroup
+2024-02-20 23:47:59,786 INFO namenode.FSNamesystem: isPermissionEnabled = true
+2024-02-20 23:47:59,786 INFO namenode.FSNamesystem: HA Enabled: false
+2024-02-20 23:47:59,838 INFO common.Util: dfs.datanode.fileio.profiling.sampling.percentage set to 0. Disabling file IO profiling
+2024-02-20 23:47:59,863 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit: configured=1000, counted=60, effected=1000
+2024-02-20 23:47:59,863 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+2024-02-20 23:47:59,870 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+2024-02-20 23:47:59,872 INFO blockmanagement.BlockManager: The block deletion will start around 2024 Feb 20 23:47:59
+2024-02-20 23:47:59,877 INFO util.GSet: Computing capacity for map BlocksMap
+2024-02-20 23:47:59,877 INFO util.GSet: VM type       = 64-bit
+2024-02-20 23:47:59,880 INFO util.GSet: 2.0% max memory 2.6 GB = 52.9 MB
+2024-02-20 23:47:59,882 INFO util.GSet: capacity      = 2^23 = 8388608 entries
+2024-02-20 23:47:59,894 INFO blockmanagement.BlockManager: Storage policy satisfier is disabled
+2024-02-20 23:47:59,894 INFO blockmanagement.BlockManager: dfs.block.access.token.enable = false
+2024-02-20 23:47:59,907 INFO Configuration.deprecation: No unit for dfs.namenode.safemode.extension(30000) assuming MILLISECONDS
+2024-02-20 23:47:59,907 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+2024-02-20 23:47:59,907 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.min.datanodes = 0
+2024-02-20 23:47:59,907 INFO blockmanagement.BlockManagerSafeMode: dfs.namenode.safemode.extension = 30000
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: defaultReplication         = 1
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: maxReplication             = 512
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: minReplication             = 1
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: redundancyRecheckInterval  = 3000ms
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+2024-02-20 23:47:59,909 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+2024-02-20 23:47:59,942 INFO namenode.FSDirectory: GLOBAL serial map: bits=29 maxEntries=536870911
+2024-02-20 23:47:59,942 INFO namenode.FSDirectory: USER serial map: bits=24 maxEntries=16777215
+2024-02-20 23:47:59,942 INFO namenode.FSDirectory: GROUP serial map: bits=24 maxEntries=16777215
+2024-02-20 23:47:59,942 INFO namenode.FSDirectory: XATTR serial map: bits=24 maxEntries=16777215
+2024-02-20 23:47:59,960 INFO util.GSet: Computing capacity for map INodeMap
+2024-02-20 23:47:59,960 INFO util.GSet: VM type       = 64-bit
+2024-02-20 23:47:59,961 INFO util.GSet: 1.0% max memory 2.6 GB = 26.5 MB
+2024-02-20 23:47:59,961 INFO util.GSet: capacity      = 2^22 = 4194304 entries
+2024-02-20 23:48:00,010 INFO namenode.FSDirectory: ACLs enabled? false
+2024-02-20 23:48:00,010 INFO namenode.FSDirectory: POSIX ACL inheritance enabled? true
+2024-02-20 23:48:00,010 INFO namenode.FSDirectory: XAttrs enabled? true
+2024-02-20 23:48:00,011 INFO namenode.NameNode: Caching file names occurring more than 10 times
+2024-02-20 23:48:00,030 INFO snapshot.SnapshotManager: Loaded config captureOpenFiles: false, skipCaptureAccessTimeOnlyChange: false, snapshotDiffAllowSnapRootDescendant: true, maxSnapshotLimit: 65536
+2024-02-20 23:48:00,035 INFO snapshot.SnapshotManager: SkipList is disabled
+2024-02-20 23:48:00,043 INFO util.GSet: Computing capacity for map cachedBlocks
+2024-02-20 23:48:00,043 INFO util.GSet: VM type       = 64-bit
+2024-02-20 23:48:00,043 INFO util.GSet: 0.25% max memory 2.6 GB = 6.6 MB
+2024-02-20 23:48:00,044 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+2024-02-20 23:48:00,057 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.window.num.buckets = 10
+2024-02-20 23:48:00,057 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.num.users = 10
+2024-02-20 23:48:00,057 INFO metrics.TopMetrics: NNTop conf: dfs.namenode.top.windows.minutes = 1,5,25
+2024-02-20 23:48:00,068 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+2024-02-20 23:48:00,068 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+2024-02-20 23:48:00,071 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+2024-02-20 23:48:00,071 INFO util.GSet: VM type       = 64-bit
+2024-02-20 23:48:00,072 INFO util.GSet: 0.029999999329447746% max memory 2.6 GB = 812.7 KB
+2024-02-20 23:48:00,072 INFO util.GSet: capacity      = 2^17 = 131072 entries
+2024-02-20 23:48:00,114 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1953358013-172.17.0.2-1708472880101
+2024-02-20 23:48:00,144 INFO common.Storage: Storage directory /tmp/hadoop-root/dfs/name has been successfully formatted.
+2024-02-20 23:48:00,177 INFO namenode.FSImageFormatProtobuf: Saving image file /tmp/hadoop-root/dfs/name/current/fsimage.ckpt_0000000000000000000 using no compression
+2024-02-20 23:48:00,305 INFO namenode.FSImageFormatProtobuf: Image file /tmp/hadoop-root/dfs/name/current/fsimage.ckpt_0000000000000000000 of size 399 bytes saved in 0 seconds .
+2024-02-20 23:48:00,323 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+2024-02-20 23:48:00,331 INFO namenode.FSImage: FSImageSaver clean checkpoint: txid=0 when meet shutdown.
+2024-02-20 23:48:00,332 INFO namenode.NameNode: SHUTDOWN_MSG:
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at fa8638416a92/172.17.0.2
+************************************************************/
+root@fa8638416a92:/opt/hadoop# cd sbin ls
+bash: cd: too many arguments
+root@fa8638416a92:/opt/hadoop# cd sbin | ls
+LICENSE.txt  NOTICE.txt  README.txt  access_log  bin  etc  include  lib  libexec  logs  sbin  share
+root@fa8638416a92:/opt/hadoop# ls
+LICENSE.txt  NOTICE.txt  README.txt  access_log  bin  etc  include  lib  libexec  logs  sbin  share
+root@fa8638416a92:/opt/hadoop# pwd
+/opt/hadoop
+root@fa8638416a92:/opt/hadoop# cd sbin
+root@fa8638416a92:/opt/hadoop/sbin# kls
+bash: kls: command not found
+root@fa8638416a92:/opt/hadoop/sbin# ls
+FederationStateStore   httpfs.sh                start-all.cmd      start-dfs.sh         stop-all.cmd      stop-dfs.sh         workers.sh
+distribute-exclude.sh  kms.sh                   start-all.sh       start-secure-dns.sh  stop-all.sh       stop-secure-dns.sh  yarn-daemon.sh
+hadoop-daemon.sh       mr-jobhistory-daemon.sh  start-balancer.sh  start-yarn.cmd       stop-balancer.sh  stop-yarn.cmd       yarn-daemons.sh
+hadoop-daemons.sh      refresh-namenodes.sh     start-dfs.cmd      start-yarn.sh        stop-dfs.cmd      stop-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# ./start-dfs.sh
+WARNING: HADOOP_SECURE_DN_USER has been replaced by HDFS_DATANODE_SECURE_USER. Using value of HADOOP_SECURE_DN_USER.
+Starting namenodes on [localhost]
+Starting datanodes
+Starting secondary namenodes [fa8638416a92]
+fa8638416a92: Warning: Permanently added 'fa8638416a92,172.17.0.2' (ECDSA) to the list of known hosts.
+root@fa8638416a92:/opt/hadoop/sbin# jps
+839 NameNode
+1384 Jps
+441 JobHistoryServer
+1211 SecondaryNameNode
+971 DataNode
+root@fa8638416a92:/opt/hadoop/sbin# cd..
+bash: cd..: command not found
+root@fa8638416a92:/opt/hadoop/sbin# ls
+FederationStateStore   httpfs.sh                start-all.cmd      start-dfs.sh         stop-all.cmd      stop-dfs.sh         workers.sh
+distribute-exclude.sh  kms.sh                   start-all.sh       start-secure-dns.sh  stop-all.sh       stop-secure-dns.sh  yarn-daemon.sh
+hadoop-daemon.sh       mr-jobhistory-daemon.sh  start-balancer.sh  start-yarn.cmd       stop-balancer.sh  stop-yarn.cmd       yarn-daemons.sh
+hadoop-daemons.sh      refresh-namenodes.sh     start-dfs.cmd      start-yarn.sh        stop-dfs.cmd      stop-yarn.sh
+root@fa8638416a92:/opt/hadoop/sbin# cd ..
+root@fa8638416a92:/opt/hadoop# ls
+LICENSE.txt  NOTICE.txt  README.txt  access_log  bin  etc  include  lib  libexec  logs  sbin  share
+root@fa8638416a92:/opt/hadoop# bin/hadoop jar share/hadoop/mapreduce/hadoop-mapreduce-examples-3.2.1.jar pi 2 5
+Number of Maps  = 2
+Samples per Map = 5
+2024-02-20 23:51:30,241 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+Wrote input for Map #0
+2024-02-20 23:51:30,884 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+Wrote input for Map #1
+Starting Job
+2024-02-20 23:51:30,995 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-02-20 23:51:31,095 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-02-20 23:51:31,095 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2024-02-20 23:51:31,299 INFO input.FileInputFormat: Total input files to process : 2
+2024-02-20 23:51:31,315 INFO mapreduce.JobSubmitter: number of splits:2
+2024-02-20 23:51:31,469 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local455249253_0001
+2024-02-20 23:51:31,470 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-02-20 23:51:31,623 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2024-02-20 23:51:31,624 INFO mapreduce.Job: Running job: job_local455249253_0001
+2024-02-20 23:51:31,629 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2024-02-20 23:51:31,643 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-20 23:51:31,643 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-20 23:51:31,644 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+2024-02-20 23:51:31,708 INFO mapred.LocalJobRunner: Waiting for map tasks
+2024-02-20 23:51:31,709 INFO mapred.LocalJobRunner: Starting task: attempt_local455249253_0001_m_000000_0
+2024-02-20 23:51:31,746 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-20 23:51:31,746 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-20 23:51:31,769 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-20 23:51:31,774 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/QuasiMonteCarlo_1708473089044_1494214706/in/part0:0+118
+2024-02-20 23:51:31,829 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-20 23:51:31,829 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-20 23:51:31,829 INFO mapred.MapTask: soft limit at 83886080
+2024-02-20 23:51:31,829 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-20 23:51:31,829 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-20 23:51:31,836 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-20 23:51:31,878 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-20 23:51:31,927 INFO mapred.LocalJobRunner:
+2024-02-20 23:51:31,933 INFO mapred.MapTask: Starting flush of map output
+2024-02-20 23:51:31,933 INFO mapred.MapTask: Spilling map output
+2024-02-20 23:51:31,933 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+2024-02-20 23:51:31,933 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+2024-02-20 23:51:31,943 INFO mapred.MapTask: Finished spill 0
+2024-02-20 23:51:31,958 INFO mapred.Task: Task:attempt_local455249253_0001_m_000000_0 is done. And is in the process of committing
+2024-02-20 23:51:31,966 INFO mapred.LocalJobRunner: map
+2024-02-20 23:51:31,967 INFO mapred.Task: Task 'attempt_local455249253_0001_m_000000_0' done.
+2024-02-20 23:51:31,980 INFO mapred.Task: Final Counters for attempt_local455249253_0001_m_000000_0: Counters: 23
+        File System Counters
+                FILE: Number of bytes read=316900
+                FILE: Number of bytes written=837800
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=118
+                HDFS: Number of bytes written=236
+                HDFS: Number of read operations=7
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=4
+                HDFS: Number of bytes read erasure-coded=0
+        Map-Reduce Framework
+                Map input records=1
+                Map output records=2
+                Map output bytes=18
+                Map output materialized bytes=28
+                Input split bytes=146
+                Combine input records=0
+                Spilled Records=2
+                Failed Shuffles=0
+                Merged Map outputs=0
+                GC time elapsed (ms)=0
+                Total committed heap usage (bytes)=284164096
+        File Input Format Counters
+                Bytes Read=118
+2024-02-20 23:51:31,980 INFO mapred.LocalJobRunner: Finishing task: attempt_local455249253_0001_m_000000_0
+2024-02-20 23:51:31,982 INFO mapred.LocalJobRunner: Starting task: attempt_local455249253_0001_m_000001_0
+2024-02-20 23:51:31,984 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-20 23:51:31,984 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-20 23:51:31,985 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-20 23:51:31,990 INFO mapred.MapTask: Processing split: hdfs://localhost:9000/user/root/QuasiMonteCarlo_1708473089044_1494214706/in/part1:0+118
+2024-02-20 23:51:32,035 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2024-02-20 23:51:32,035 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2024-02-20 23:51:32,035 INFO mapred.MapTask: soft limit at 83886080
+2024-02-20 23:51:32,035 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2024-02-20 23:51:32,035 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2024-02-20 23:51:32,036 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2024-02-20 23:51:32,053 INFO mapred.LocalJobRunner:
+2024-02-20 23:51:32,056 INFO mapred.MapTask: Starting flush of map output
+2024-02-20 23:51:32,056 INFO mapred.MapTask: Spilling map output
+2024-02-20 23:51:32,056 INFO mapred.MapTask: bufstart = 0; bufend = 18; bufvoid = 104857600
+2024-02-20 23:51:32,056 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 26214392(104857568); length = 5/6553600
+2024-02-20 23:51:32,059 INFO mapred.MapTask: Finished spill 0
+2024-02-20 23:51:32,062 INFO mapred.Task: Task:attempt_local455249253_0001_m_000001_0 is done. And is in the process of committing
+2024-02-20 23:51:32,073 INFO mapred.LocalJobRunner: map
+2024-02-20 23:51:32,073 INFO mapred.Task: Task 'attempt_local455249253_0001_m_000001_0' done.
+2024-02-20 23:51:32,074 INFO mapred.Task: Final Counters for attempt_local455249253_0001_m_000001_0: Counters: 23
+        File System Counters
+                FILE: Number of bytes read=317211
+                FILE: Number of bytes written=837860
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=236
+                HDFS: Number of bytes written=236
+                HDFS: Number of read operations=10
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=4
+                HDFS: Number of bytes read erasure-coded=0
+        Map-Reduce Framework
+                Map input records=1
+                Map output records=2
+                Map output bytes=18
+                Map output materialized bytes=28
+                Input split bytes=146
+                Combine input records=0
+                Spilled Records=2
+                Failed Shuffles=0
+                Merged Map outputs=0
+                GC time elapsed (ms)=0
+                Total committed heap usage (bytes)=389545984
+        File Input Format Counters
+                Bytes Read=118
+2024-02-20 23:51:32,074 INFO mapred.LocalJobRunner: Finishing task: attempt_local455249253_0001_m_000001_0
+2024-02-20 23:51:32,075 INFO mapred.LocalJobRunner: map task executor complete.
+2024-02-20 23:51:32,080 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2024-02-20 23:51:32,081 INFO mapred.LocalJobRunner: Starting task: attempt_local455249253_0001_r_000000_0
+2024-02-20 23:51:32,097 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2024-02-20 23:51:32,097 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2024-02-20 23:51:32,097 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2024-02-20 23:51:32,114 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@707d9882
+2024-02-20 23:51:32,116 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2024-02-20 23:51:32,139 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1941805440, maxSingleShuffleLimit=485451360, mergeThreshold=1281591680, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2024-02-20 23:51:32,143 INFO reduce.EventFetcher: attempt_local455249253_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2024-02-20 23:51:32,181 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local455249253_0001_m_000001_0 decomp: 24 len: 28 to MEMORY
+2024-02-20 23:51:32,195 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local455249253_0001_m_000001_0
+2024-02-20 23:51:32,195 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->24
+2024-02-20 23:51:32,206 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local455249253_0001_m_000000_0 decomp: 24 len: 28 to MEMORY
+2024-02-20 23:51:32,211 INFO reduce.InMemoryMapOutput: Read 24 bytes from map-output for attempt_local455249253_0001_m_000000_0
+2024-02-20 23:51:32,211 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 24, inMemoryMapOutputs.size() -> 2, commitMemory -> 24, usedMemory ->48
+2024-02-20 23:51:32,212 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2024-02-20 23:51:32,215 INFO mapred.LocalJobRunner: 2 / 2 copied.
+2024-02-20 23:51:32,215 INFO reduce.MergeManagerImpl: finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
+2024-02-20 23:51:32,232 INFO mapred.Merger: Merging 2 sorted segments
+2024-02-20 23:51:32,233 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 42 bytes
+2024-02-20 23:51:32,234 INFO reduce.MergeManagerImpl: Merged 2 segments, 48 bytes to disk to satisfy reduce memory limit
+2024-02-20 23:51:32,235 INFO reduce.MergeManagerImpl: Merging 1 files, 50 bytes from disk
+2024-02-20 23:51:32,236 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2024-02-20 23:51:32,237 INFO mapred.Merger: Merging 1 sorted segments
+2024-02-20 23:51:32,238 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 43 bytes
+2024-02-20 23:51:32,243 INFO mapred.LocalJobRunner: 2 / 2 copied.
+2024-02-20 23:51:32,271 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2024-02-20 23:51:32,291 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-20 23:51:32,312 INFO sasl.SaslDataTransferClient: SASL encryption trust check: localHostTrusted = false, remoteHostTrusted = false
+2024-02-20 23:51:32,327 INFO mapred.Task: Task:attempt_local455249253_0001_r_000000_0 is done. And is in the process of committing
+2024-02-20 23:51:32,338 INFO mapred.LocalJobRunner: 2 / 2 copied.
+2024-02-20 23:51:32,338 INFO mapred.Task: Task attempt_local455249253_0001_r_000000_0 is allowed to commit now
+2024-02-20 23:51:32,370 INFO output.FileOutputCommitter: Saved output of task 'attempt_local455249253_0001_r_000000_0' to hdfs://localhost:9000/user/root/QuasiMonteCarlo_1708473089044_1494214706/out
+2024-02-20 23:51:32,372 INFO mapred.LocalJobRunner: reduce > reduce
+2024-02-20 23:51:32,372 INFO mapred.Task: Task 'attempt_local455249253_0001_r_000000_0' done.
+2024-02-20 23:51:32,373 INFO mapred.Task: Final Counters for attempt_local455249253_0001_r_000000_0: Counters: 30
+        File System Counters
+                FILE: Number of bytes read=317381
+                FILE: Number of bytes written=837910
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=236
+                HDFS: Number of bytes written=451
+                HDFS: Number of read operations=15
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=7
+                HDFS: Number of bytes read erasure-coded=0
+        Map-Reduce Framework
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=2
+                Reduce shuffle bytes=56
+                Reduce input records=4
+                Reduce output records=0
+                Spilled Records=4
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=10
+                Total committed heap usage (bytes)=449839104
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Output Format Counters
+                Bytes Written=97
+2024-02-20 23:51:32,374 INFO mapred.LocalJobRunner: Finishing task: attempt_local455249253_0001_r_000000_0
+2024-02-20 23:51:32,374 INFO mapred.LocalJobRunner: reduce task executor complete.
+2024-02-20 23:51:32,632 INFO mapreduce.Job: Job job_local455249253_0001 running in uber mode : false
+2024-02-20 23:51:32,634 INFO mapreduce.Job:  map 100% reduce 100%
+2024-02-20 23:51:32,635 INFO mapreduce.Job: Job job_local455249253_0001 completed successfully
+2024-02-20 23:51:32,656 INFO mapreduce.Job: Counters: 36
+        File System Counters
+                FILE: Number of bytes read=951492
+                FILE: Number of bytes written=2513570
+                FILE: Number of read operations=0
+                FILE: Number of large read operations=0
+                FILE: Number of write operations=0
+                HDFS: Number of bytes read=590
+                HDFS: Number of bytes written=923
+                HDFS: Number of read operations=32
+                HDFS: Number of large read operations=0
+                HDFS: Number of write operations=15
+                HDFS: Number of bytes read erasure-coded=0
+        Map-Reduce Framework
+                Map input records=2
+                Map output records=4
+                Map output bytes=36
+                Map output materialized bytes=56
+                Input split bytes=292
+                Combine input records=0
+                Combine output records=0
+                Reduce input groups=2
+                Reduce shuffle bytes=56
+                Reduce input records=4
+                Reduce output records=0
+                Spilled Records=8
+                Shuffled Maps =2
+                Failed Shuffles=0
+                Merged Map outputs=2
+                GC time elapsed (ms)=10
+                Total committed heap usage (bytes)=1123549184
+        Shuffle Errors
+                BAD_ID=0
+                CONNECTION=0
+                IO_ERROR=0
+                WRONG_LENGTH=0
+                WRONG_MAP=0
+                WRONG_REDUCE=0
+        File Input Format Counters
+                Bytes Read=236
+        File Output Format Counters
+                Bytes Written=97
+Job Finished in 1.754 seconds
+Estimated value of Pi is 3.60000000000000000000
+root@fa8638416a92:/opt/hadoop#

@@ -19,12 +19,14 @@ RUN \
     mv hadoop-3.2.1 $hadoop_path && \
     echo "export JAVA_HOME=$java_path" >> $hadoop_path/etc/hadoop/hadoop-env.sh && \
     echo "PATH=$PATH:$hadoop_path/bin" >> ~/.bashrc
+RUN /etc/init.d/ssh start
 
-ADD /*xml $hadoop_path/etc/hadoop/
-ADD /*jar $hadoop_path
+ADD *.xml $hadoop_path/etc/hadoop/
+ADD *.jar $hadoop_path
 ADD bootstrap.sh bootstrap.sh
+ADD access_log $hadoop_path
 
-EXPOSE 8088 50070 50075
+EXPOSE 8088 50070 50075 50030 50060
 cmd bash bootstrap.sh
 
 
