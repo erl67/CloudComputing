@@ -18,9 +18,7 @@ for line in sys.stdin:
         ngram = [word[i:i+n] for i in range(len(word)-n+1)]
         ngrams.extend(ngram)
 
-
-    #grams = [' '.join(ngram) for ngram in ngrams] 
     #print(ngrams)
-    #print(grams)
+
     for ngram in ngrams:
         print(f"{ngram}\t{1}")
