@@ -13,7 +13,7 @@ else:
 for line in sys.stdin:
     words = line.strip().split()
     #print(words)
-    
+
     for word in words:
         ngram = [word[i:i+n] for i in range(len(word)-n+1)]
         ngrams.extend(ngram)

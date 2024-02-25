@@ -5,8 +5,6 @@ docker run -dit ubuntu
 #run Dockerfile to build container
 Docker build . 
 
-
-
 service start ssh
 cd /opt/hadoop
 
@@ -28,7 +26,29 @@ jack    2
 nimble  1
 quick   1
 
+#random text generated to HDFS
+root@fa8638416a92:/opt/code# /opt/hadoop/bin/hadoop jar /opt/hadoop/share/hadoop/mapreduce/hadoop-mapreduce-examples*.jar randomtextwriter
+ -D mapreduce.randomtextwriter.bytespermap=10485760 input/rand.txt
 
+
+#Ngram
+
+#Tried to use MRJob class but it didn't work right.
+Instead everything was done the same as part 3 except with a different script
+
+Example: 
+root@fa8638416a92:/opt/code# ./ngram.sh 3 input/hello.txt
+Where the number is the length of the ngram and the input file is either input/hello.txt or input/rand.txt
+Output is saved same as part 3
+
+#Part 3 is also run via a shell script such as
+root@fa8638416a92:/opt/code# ./mapreduce.sh 1
+Where the number [1-10] is equal to the problem number.
+I used the script from the Hadoop with Python book and had chatgpt modify it to select different inputs
+I also had it save both the program output and reduced output to files, to make it easier to check and debug.
+
+
+#Testing python files
  
 cat test | ./mapper3.py | sort -t 1 | ./reducer3.py
 

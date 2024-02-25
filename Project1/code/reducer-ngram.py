@@ -5,10 +5,10 @@ current_ngram, ngram = None, None
 total_count = 0
 
 for line in sys.stdin:
-    #print(line)   
+    #print(line)
     ngram, count = line.strip().split("\t")
-    count = int(count) 
-    
+    count = int(count)
+
     if current_ngram == ngram:
         total_count += count
     else:
@@ -19,4 +19,3 @@ for line in sys.stdin:
 
 if current_ngram == ngram:
     print(f"{current_ngram}\t{total_count}")
-
