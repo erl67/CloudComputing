@@ -9,7 +9,7 @@ fi
 if ! [[ $1 =~ ^[1-9]$|^10$ ]]; then
     echo "Must be number between 1 and 10"
     exit 1
-fi
+fi 
 
 ngram_length=$1
 input_file=$2
