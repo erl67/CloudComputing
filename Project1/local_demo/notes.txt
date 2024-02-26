@@ -58,11 +58,3 @@ root@fa8638416a92:/opt/code/output# cat out4.txt | sort -k2,2nr | head -n 10 > o
 
 #9 sort and reverse to get top IPs
 cat out9.txt | sort -k2,2nr | head -n 10 > out9sorted.txt
-
-
-Sources:
-https://docs.docker.com/engine/reference/builder/
-https://stackoverflow.com/questions/17569423/what-is-best-way-to-start-and-stop-hadoop-ecosystem-with-command-line
-https://hadoop.apache.org/docs/r1.2.1/streaming.html
-https://www.oreilly.com/content/hadoop-with-python/
-https://hadoop.apache.org/docs/current/hadoop-project-dist/hadoop-hdfs/HDFSCommands.html

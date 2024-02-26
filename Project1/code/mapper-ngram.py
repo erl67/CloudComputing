@@ -1,9 +1,6 @@
 #!/usr/bin/env python3
 import sys
 
-text = "Hello World Hellow World"
-ngrams = []
-
 if len(sys.argv) == 2:
     n = int(sys.argv[1])
 else:
@@ -11,6 +8,7 @@ else:
 
 #print(n)
 for line in sys.stdin:
+    ngrams = []
     words = line.strip().split()
     #print(words)
     
