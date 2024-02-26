@@ -33,7 +33,7 @@ hadoop runtime output. The command to run each program is as follows, where the 
 root@fa8638416a92:/opt/code# ./mapreduce.sh 1
 
 
-For a few of them I had to sort the output afterwards because the reducer that was done with the following commands:
+For a few of them I had to sort the output afterwards because the reducer output is unordered; that was done with the following commands:
 cat output4.txt | sort -k2,2nr > output4sorted.txt
 cat out9.txt | sort -k2,2nr | head -n 10 > out9sorted.txt
 
