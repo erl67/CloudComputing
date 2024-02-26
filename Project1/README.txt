@@ -28,10 +28,13 @@ root@fa8638416a92:/opt/code#  ./ngram.sh 5 input/rand.txt
 
 3. Part 3 was the ten questions on the common log file. For this part I used 10 different map/reduce programs which
 are all callable from the same shell script. The script calls the corresponding program and saves the output along with the
-hadoop runtime output. The command to run each program is (where the number is a number from 1 to 10 of which question to answer.
+hadoop runtime output. The command to run each program is as follows, where the number is a number from 1 to 10 of which question to answer.
+
 root@fa8638416a92:/opt/code# ./mapreduce.sh 1
+
+
 For a few of them I had to sort the output afterwards because the reducer that was done with the following commands:
-echo output4.txt | sort -k2,2nr > output4sorted.txt
+cat output4.txt | sort -k2,2nr > output4sorted.txt
 cat out9.txt | sort -k2,2nr | head -n 10 > out9sorted.txt
 
 
