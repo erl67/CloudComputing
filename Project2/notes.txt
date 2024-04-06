@@ -7,7 +7,10 @@ PS C:\Users\x5769> scp -i .ssh/key_group15 C:/resized_log root@155.98.37.38:/
 root@vm-1:~# curl -OL https://dlcdn.apache.org/cassandra/4.1.4/apache-cassandra-4.1.4-bin.tar.gz
 root@vm-1:~# tar xzvf apache-cassandra-4.1.4-bin.tar.gz
 
-cd /path/to/apache-cassandra-4.1.4
+cd /root/apache-cassandra-4.1.4
+
+nano /root/apache-cassandra-4.1.4/conf/cassandra.yaml
+
 ./bin/cassandra
 ./bin/nodetool status
 
@@ -15,7 +18,14 @@ cd /path/to/apache-cassandra-4.1.4
 
 
 
+Part 2:
+apt install python3-pip
+pip install cassandra-driver
 
+
+./cqlsh
+describe resized_log_keyspace.log_table
+truncate log_table
 
 
 
