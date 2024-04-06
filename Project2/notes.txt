@@ -24,8 +24,8 @@ pip install cassandra-driver
 
 
 ./cqlsh
-describe resized_log_keyspace.log_table
-truncate log_table
+describe resized_log_keyspace.log_table;
+truncate resized_log_keyspace.log_table;
 
 
 
