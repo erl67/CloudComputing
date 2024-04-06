@@ -23,7 +23,7 @@ with open('resized_log', 'r') as f:
 
         query = """
             INSERT INTO log_table (ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent)"
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s)
             """
         #print(query)
         print(ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent)
