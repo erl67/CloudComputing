@@ -1,7 +1,32 @@
 
 PS C:\Users\x5769> ssh -i .ssh/key_group15 root@155.98.37.38
+
 PS C:\Users\x5769> scp -i .ssh/key_group15 .ssh/key_group15 root@155.98.37.38:/root/.ssh
 PS C:\Users\x5769> scp -i .ssh/key_group15 C:/resized_log root@155.98.37.38:/
 
 root@vm-1:~# curl -OL https://dlcdn.apache.org/cassandra/4.1.4/apache-cassandra-4.1.4-bin.tar.gz
 root@vm-1:~# tar xzvf apache-cassandra-4.1.4-bin.tar.gz
+
+cd /path/to/apache-cassandra-4.1.4
+./bin/cassandra
+./bin/nodetool status
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sources:
+https://cassandra.apache.org/doc/stable/cassandra/getting_started/installing.html
+https://cassandra.apache.org/doc/stable/cassandra/getting_started/configuring.html
