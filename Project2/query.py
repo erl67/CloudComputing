@@ -17,28 +17,41 @@ q2 = "SELECT COUNT(*) FROM log_table WHERE ip_address = '96.32.128.5'"
 q3 = "SELECT requested_url, COUNT(1) FROM log_table"
 #q3 = "SELECT id, requested_url, COUNT(*) FROM log_table GROUP BY requested_url LIMIT 1;"
 
-q4 = "SELECT ip_address, COUNT(*) FROM log_table GROUP BY ip_address"
+q4 = "SELECT ip_address, COUNT(*) FROM log_table GROUP BY ip_address" #sort result
 
-q5 = "SELECT COUNT(*) FROM log_table WHERE user_agent LIKE '%Mozilla%'"
-q6 = "SELECT (COUNT(CASE WHEN request_method = 'GET' THEN 1 END) * 1.0) / COUNT(*) AS ratio FROM log_table WHERE date_time >= '2022-04-02 00:00:00' AND date_time < '2022-04-03 00:00:00'"
+q5 = "SELECT COUNT(*) FROM log_table WHERE user_agent LIKE '%Mozilla%'" #edit cassandra.yaml
+
+q6 = "SELECT request_method FROM log_table WHERE date_time >= '2022-04-02' AND date_time < '2022-04-03'" #/
+q6b = "SELECT request_method FROM log_table WHERE date_time >= '2022-04-02' AND date_time < '2022-04-03' AND request_method = 'GET'"
 
 q7 = "SELECT COUNT(*) FROM log_table WHERE response_size <= 404 ALLOW FILTERING"
-q8 = "SELECT ip_address, COUNT(*) FROM log_table WHERE status_code = 404 GROUP BY ip_address"
+q8 = "SELECT ip_address, COUNT(*) FROM log_table WHERE status_code = 404 GROUP BY ip_address" #>=10
 
-queries = [q3]
+queries = [q0]
 #queries = [q0, q0a, q1, q2, q3, q4, q5]
 
 for query in queries:
     print(f"\n{query}")
-
     result = session.execute(query, timeout=600)
-
     for row in result:
         print(row)
         #count = row[0]
         #print(f"{query=}\n{count=}")
 
 
+result = session.execute(q1, timeout=600)
+result = session.execute(q2, timeout=600)
+
+result = session.execute(query, timeout=600)
+result = session.execute(query, timeout=600)
+
+result = session.execute(q4, timeout=600)
+
+result = session.execute(query, timeout=600)
+result = session.execute(query, timeout=600)
+result = session.execute(query, timeout=600)
+result = session.execute(query, timeout=600)
+result = session.execute(query, timeout=600)
 
 session.shutdown()
 cluster.shutdown()
