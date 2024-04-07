@@ -5,7 +5,7 @@ from datetime import datetime
 import sys
 
 cluster = Cluster(['127.0.0.1'])
-session = cluster.connect('log_keyspace')
+session = cluster.connect('log_keyspace3')
 i = 0
 
 with open('resized_log', 'r') as f:
@@ -36,15 +36,15 @@ with open('resized_log', 'r') as f:
 
         user_agent = ' '.join(parts[11:]).strip()[1:-5]
 
-        query = "INSERT INTO log_table (ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent) VALUES (%s, %s, %s, %s, %s, %s, %s, %s)"
+        query = "INSERT INTO log_table (id, ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)"
 
-        if i % 100000 == 0:
+        if i % 50000 == 0:
             print(f"{i=}")
             #print(f"{i=}\n{query}")
             #print(ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent)
 
         try:
-            session.execute(query, (ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent))
+            session.execute(query, (i, ip_address, date_time, request_method, requested_url, http_version, status_code, response_size, user_agent))
         except:
             print(f"{line=}")
             print(f"{i=}\t{query=}")
