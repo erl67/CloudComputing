@@ -7,9 +7,9 @@ cqlsh> CREATE KEYSPACE IF NOT EXISTS log_keyspace
    ... SimpleStrategy','replication_factor':1};
 ConfigurationException: Unable to find replication strategy class 'org.apache.cassandra.locator.
 SimpleStrategy'
-cqlsh> CREATE KEYSPACE IF NOT EXISTS resized_log_keyspace
+cqlsh> CREATE KEYSPACE IF NOT EXISTS log_keyspace
    ... WITH replication = {'class':'SimpleStrategy','replication_factor':1};
-cqlsh> CREATE TABLE IF NOT EXISTS resized_log_keyspace.log_table (
+cqlsh> CREATE TABLE IF NOT EXISTS log_keyspace.log_table (
    ... ip_address TEXT,
    ... date_time TIMESTAMP,
    ... request_method TEXT,
@@ -18,7 +18,7 @@ cqlsh> CREATE TABLE IF NOT EXISTS resized_log_keyspace.log_table (
    ... status_code INT,
    ... response_size INT,
    ... user_agent TEXT,
-   ... PRIMARY KEY (ip_address, date_time)
+   ... PRIMARY KEY ((ip_address, date_time, requested_url))
    ... );
 cqlsh>
 
