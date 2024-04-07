@@ -27,6 +27,10 @@ pip install cassandra-driver
 describe resized_log_keyspace.log_table;
 truncate resized_log_keyspace.log_table;
 
+cqlsh --request-timeout=600
+
+cqlsh> select count(*) from resized_log_keyspace.log_table;
+
 
 
 

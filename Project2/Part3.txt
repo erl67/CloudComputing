@@ -1,0 +1,76 @@
+1. How many hits were made to the website item “/administrator/index.php”?
+
+SELECT COUNT(*) FROM log_keyspace.log_table WHERE requested_url = '/administrator/index.php' ALLOW FILTERING;
+
+
+2. How many hits were made from the IP: 96.32.128.5
+
+SELECT COUNT(*) FROM log_keyspace2.log_table WHERE ip_address = '96.32.128.5';
+
+
+
+3. Which path in the website has been hit most? How many hits were made to
+the path?
+
+SELECT requested_url, COUNT(*) AS hits
+FROM log_keyspace2.log_table
+GROUP BY requested_url
+ORDER BY hits DESC LIMIT 1;
+
+4. Which IP accesses the website most? How many accesses were made by it?
+
+SELECT ip_address, COUNT(*) AS hits
+FROM log_keyspace2.log_table
+GROUP BY ip_address
+ORDER BY access_count DESC LIMIT 1;
+
+
+5. How many accesses were made by Firefox(Mozilla)?
+
+SELECT COUNT(*) AS ff
+FROM log_keyspace2.log_table
+WHERE user_agent CONTAINS 'Mozilla';
+
+
+6. For all requests on 02/Apr/2022, what is the ratio of GET request?
+
+SELECT (COUNT(CASE WHEN request_method = 'GET' THEN 1 END) * 1.0) / COUNT(*) AS ratio
+FROM log_keyspace2.log_table
+WHERE date_time >= '2022-04-02 00:00:00' AND date_time < '2022-04-03 00:00:00';
+
+
+
+7. How many requests are lower than or equal to 404 bytes?
+
+SELECT COUNT(*) AS requests
+FROM log_keyspace.log_table
+WHERE response_size <= 404;
+
+
+
+8. List the IPs that have more than ten 404 requests. If no ip fulfills, print the ip
+that has most 404 requests and the number of requests.
+
+-- Calculate the IPs with more than ten 404 requests
+WITH ip_counts AS (
+    SELECT ip_address, COUNT(*) AS count_404
+    FROM log_keyspace.log_table
+    WHERE status_code = 404
+    GROUP BY ip_address
+    HAVING COUNT(*) > 10
+)
+-- If there are IPs with more than ten 404 requests, list them
+SELECT ip_address, count_404
+FROM ip_counts
+UNION
+-- If no IP fulfills the condition, find the IP with the most 404 requests
+SELECT ip_address, count_404
+FROM (
+    SELECT ip_address, COUNT(*) AS count_404
+    FROM log_keyspace.log_table
+    WHERE status_code = 404
+    GROUP BY ip_address
+    ORDER BY count_404 DESC
+    LIMIT 1
+)
+WHERE NOT EXISTS (SELECT 1 FROM ip_counts);
