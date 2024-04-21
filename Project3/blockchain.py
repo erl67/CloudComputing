@@ -22,7 +22,7 @@ class Blockchain:
     def compile_contract(self):
         compiled_sol = compile_source(
             '''
-            pragma solidity >0.5.0;
+            pragma solidity ^0.8.0;
             contract Verify{
                 string merkleRoot;
 
@@ -35,7 +35,8 @@ class Blockchain:
                 }
             }
             ''',
-            output_values=['abi', 'bin']
+            output_values =['abi', 'bin'],
+	    solc_version= '0.8.0'
         )
 
         contract_id, contract_interface = compiled_sol.popitem()

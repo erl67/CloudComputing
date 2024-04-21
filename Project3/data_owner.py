@@ -11,25 +11,30 @@ class DataOwner:
 
     #insert data to self.server
     def insert_data_to_server(self):
-        pass
+        for key, value in self.data.items():
+            self.server.add_data(key, value)
 
     # build merkle tree on data owner side to get the merkle root, key+value as values
     # You can use functions provided by merkletools
     def build_merkle_tree(self):
-        pass
+        self.merkle_tree = merkletools.MerkleTools()
+        for key, value in self.data.items():
+            self.merkle_tree.add_leaf(key + value, True)
+        self.merkle_tree.make_tree()
 
     # upload self.merkle_tree to self.server
     def upload_merkle_tree_to_server(self):
-        pass
+        self.server.set_merkle_tree(self.merkle_tree)
 
 
     # get merkle root from self.merkle_tree
     def get_merkle_root(self):
-        pass
+        return self.merkle_tree.get_merkle_root()
 
     #upload merkle root to self.blockchains
     def upload_merkle_root_to_blockchain(self):
-        pass
+        merkle_root = self.get_merkle_root()
+        self.blockchain.set_merkle_root(merkle_root)
 
 
 
